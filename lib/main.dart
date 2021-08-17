@@ -10,14 +10,11 @@ void main() => runApp(MaterialApp(home: Home()));
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider<ServicesProvider>(
-            create: (_) => ServicesProvider()),
-        ChangeNotifierProvider<OrientationScrollProvider>(
-            create: (_) => OrientationScrollProvider()),
-      ],
-      child: Wrapper(),
-    );
+    return MultiProvider(providers: [
+      ChangeNotifierProvider<ServicesProvider>(
+          create: (_) => ServicesProvider()),
+      ChangeNotifierProvider<OrientationScrollProvider>(
+          create: (_) => OrientationScrollProvider())
+    ], child: Wrapper());
   }
 }

@@ -26,34 +26,40 @@ Widget tree3() => Container(
     child: Image.asset('assets/image/tree3.png', fit: BoxFit.fitHeight));
 Widget verySmallTreeR() => Container(
     height: 60,
-    child: Image.asset('assets/image/verySmallTreeR.png', fit: BoxFit.fitHeight));
+    child:
+        Image.asset('assets/image/verySmallTreeR.png', fit: BoxFit.fitHeight));
 Widget verySmallTree() => Container(
     height: 60,
-    child: Image.asset('assets/image/verySmallTree.png', fit: BoxFit.fitHeight));
+    child:
+        Image.asset('assets/image/verySmallTree.png', fit: BoxFit.fitHeight));
+
+///
 Widget mount() => Container(
-   width:  ScreenSize.pWidth!+20,
-    child: Image.asset('assets/image/mount.png', fit: BoxFit.fitWidth));
+    height: 180,
+    width: ScreenSize.pWidth! + 20,
+    child: Image.asset('assets/image/mount.png', fit: BoxFit.cover));
 Widget birdDown() => Container(
-   height: 170,
+    height: 170,
     child: Image.asset('assets/image/birdDown.png', fit: BoxFit.fitHeight));
 Widget birdRight() => Container(
-   height: 120,
+    height: 120,
     child: Image.asset('assets/image/birdRight.png', fit: BoxFit.fitHeight));
 Widget birdLeft() => Container(
-   height: 80,
+    height: 80,
     child: Image.asset('assets/image/birdLeft.png', fit: BoxFit.fitHeight));
 Widget extraLargeTree() => Container(
-   height: 80,
-    child: Image.asset('assets/image/extraLargeTree.png', fit: BoxFit.fitHeight));
+    height: 80,
+    child:
+        Image.asset('assets/image/extraLargeTree.png', fit: BoxFit.fitHeight));
 Widget bigTree2() => Container(
-   height:100,
+    height: 100,
     child: Image.asset('assets/image/bigTree2.png', fit: BoxFit.fitHeight));
 Widget tree1() => Container(
-   height:90,
+    height: 90,
     child: Image.asset('assets/image/tree1.png', fit: BoxFit.fitHeight));
 Widget f22(w) => Container(
-  width:w ,
+    width: w,
     child: Image.asset('assets/image/f22.png', fit: BoxFit.fitHeight));
 Widget moon() => Container(
-  width:20 ,
+    width: 20,
     child: Image.asset('assets/image/moon.png', fit: BoxFit.fitHeight));
