@@ -6,14 +6,18 @@ class OrientationScrollProvider extends ChangeNotifier {
   ///
   double _portraitScroll = 0;
   double _landScapeScroll = 0;
+  double _tabScroll = 0;
+  double _desktopScroll = 0;
+ 
 
   ///
   bool? get isPortrait => _isPortrait;
 
   ///
   double get portScroll => _portraitScroll;
-
   double get landScroll => _landScapeScroll;
+  double get tabScroll => _tabScroll;
+  double get desktopScroll => _desktopScroll; 
 
   void setInItOrientation(bool state) {
     if (_isPortrait == null) {
@@ -41,4 +45,16 @@ class OrientationScrollProvider extends ChangeNotifier {
     _landScapeScroll = value;
     notifyListeners();
   }
+
+  void setTabScroll(value) {
+    _tabScroll = value;
+    notifyListeners();
+  }
+
+  void setDesktopScroll(value) {
+    _desktopScroll = value;
+    notifyListeners();
+  }
+
+ 
 }

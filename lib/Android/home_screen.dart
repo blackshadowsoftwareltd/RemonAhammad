@@ -20,5 +20,5 @@ class AndroidHome extends StatelessWidget {
         zOrientation ? PortraitBody() : LandScapeBody(),
       ],
     ));
-  }
+  } 
 }
